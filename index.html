@@ -26,6 +26,11 @@
         <h3>Part 1 - <span class="head-text-dark">var vs let/const</span></h3>
         <p><b>Instructions: </b>Open the browser inspector and review the JS code for part 1.  
           Reviewing the output, explain how var scopes differently than let and why we'd use <b>let</b> over <b>var</b>.</p>
+        <p>
+          Var maintains a global scope (function-scope), whereas let does not have a global scope (block-scope). 
+          Let is only visible within the block of code where it is declared - in this example, that is the if statement.
+          As a result, we use let over var to avoid confusing or accidentally overwriting variables that could happen when using the global-scoped var.
+        </p>
     </section>
  
     <section id="2">
